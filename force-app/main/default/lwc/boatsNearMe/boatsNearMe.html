@@ -1,0 +1,13 @@
+<template>
+    <lightning-card class="slds-is-relative">
+
+    <template if:true={isLoading}>                                                  <!--если данные грузятся, в пеерменной isLoading - true--> 
+    <lightning-spinner alternative-text="Loading" size="medium" variant="brand">    <!--просто отображается значок спиннера-->
+    </lightning-spinner>
+    </template>
+    <template if:true={mapMarkers}>
+    <lightning-map map-markers={mapMarkers} zoom-level="10"></lightning-map>        <!--map-markers - массив объектов содержащих поле название и поле координат-->
+    <div slot="footer">Top 10 Only!</div>                                           <!--просто футер содержащий надпись-->
+    </template>
+    </lightning-card>
+    </template>

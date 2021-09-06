@@ -1,0 +1,7 @@
+.reviews-style {
+  max-height: 250px;
+}
+.no-reviews {
+  position: absolute;
+  text-align: center;
+}
